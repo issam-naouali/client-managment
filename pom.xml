@@ -13,13 +13,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<distributionManagement>
    <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://192.168.126.140:8081/repository/maven-snapshots/</url>
-   </snapshotRepository>
-		<distributionManagement>
-   <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://192.168.126.140:8081/repository/maven-releases/</url>
+      <id>maven-central-repository</id>
+      <url>http://192.168.126.140:8081/repository/maven-central-repository//</url>
    </snapshotRepository>
 </distributionManagement>
 	<name>clinique</name>
