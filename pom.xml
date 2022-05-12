@@ -13,9 +13,9 @@
 	<distributionManagement>
    <snapshotRepository>
       <id>maven-central-repository</id>
-      <url>http://192.168.126.140:8081/repository/maven-central-repository//</url>
+      <url>http://192.168.126.140:8081/repository/maven-central-repository/</url>
    </snapshotRepository>
-	</distributionManagement>
+</distributionManagement>
 <name>clinique</name>
 <description>Demo project for Spring Boot</description>
 <properties>
@@ -57,6 +57,5 @@
 <artifactId>spring-boot-maven-plugin</artifactId>
 </plugin>
 </plugins>
-</plugin>	
 </build>
 </project>
