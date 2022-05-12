@@ -104,6 +104,7 @@
       <skipStaging>true</skipStaging>
    </configuration>
 </plugin>
+		
 	</build>
 
 </project>
