@@ -11,12 +11,6 @@ This XML file does not appear to have any style information associated with it. 
 <groupId>com.esprit</groupId>
 <artifactId>clinique</artifactId>
 <version>0.0.1-SNAPSHOT</version>
-  <distributionManagement>
-   <snapshotRepository>
-      <id>maven-central-repository</id>
-      <url>http://192.168.126.140:8081/repository/maven-central-repository//</url>
-   </snapshotRepository>
-</distributionManagement>
 <name>clinique</name>
 <description>Demo project for Spring Boot</description>
 <properties>
@@ -54,7 +48,6 @@ This XML file does not appear to have any style information associated with it. 
 <build>
 <plugins>
 <plugin>
-
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-maven-plugin</artifactId>
 </plugin>
