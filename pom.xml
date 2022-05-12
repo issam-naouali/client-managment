@@ -54,13 +54,7 @@ This XML file does not appear to have any style information associated with it. 
 <build>
 <plugins>
 <plugin>
-  <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.5</version>
-        </plugin>
-      </plugins>
+
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-maven-plugin</artifactId>
 </plugin>
