@@ -81,6 +81,13 @@ This XML file does not appear to have any style information associated with it. 
           <pluginClass>org.sonarsource.plugins.example.ExamplePlugin</pluginClass>
         </configuration>
       </plugin>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>${jdk.min.version}</source>
+          <target>${jdk.min.version}</target>
 </plugins>
 </build>
 </project>
