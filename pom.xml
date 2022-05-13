@@ -44,6 +44,25 @@ This XML file does not appear to have any style information associated with it. 
 <artifactId>spring-boot-starter-test</artifactId>
 <scope>test</scope>
 </dependency>
+  <dependency>
+      <!-- groupId is 'org.sonarsource.api.plugin' starting in version 9.5 -->
+      <groupId>org.sonarsource.sonarqube</groupId>
+      <artifactId>sonar-plugin-api</artifactId>
+      <version>${sonar.apiVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+   <dependency>
+      <groupId>org.sonarsource.sonarqube</groupId>
+      <artifactId>sonar-testing-harness</artifactId>
+      <version>${sonar.apiVersion}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
 </dependencies>
 <build>
 <plugins>
@@ -51,6 +70,17 @@ This XML file does not appear to have any style information associated with it. 
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-maven-plugin</artifactId>
 </plugin>
+  <plugins>
+      <plugin>
+        <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
+        <artifactId>sonar-packaging-maven-plugin</artifactId>
+        <version>1.18.0.372</version>
+        <extensions>true</extensions>
+        <configuration>
+          <pluginKey>example</pluginKey>
+          <pluginClass>org.sonarsource.plugins.example.ExamplePlugin</pluginClass>
+        </configuration>
+      </plugin>
 </plugins>
 </build>
 </project>
